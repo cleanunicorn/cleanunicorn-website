@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+
+* {
+    font-family: 'Aleo', serif;
+}
+
+.footer {
+    font-size: 80%;
+}

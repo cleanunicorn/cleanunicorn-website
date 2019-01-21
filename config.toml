@@ -1,0 +1,70 @@
+baseurl = "http://www.cleanunicorn.xyz"
+title = "Daniel Luca"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+relativeURLs = true
+
+paginate = 20
+canonifyurls = false
+
+# pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Daniel Luca"
+    info = "Developer and security researcher"
+    description = "Daniel Luca's personal website"
+    keywords = "blog,developer,personal,security,ethereum,blockchain"
+    avatarurl = "images/me.jpg"
+
+    favicon_32 = "images/favicon-32x32.png"
+    favicon_16 = "images/favicon-16x16.png"
+
+    footercontent = "\"We are the music makers and we are the dreamers of dreams\" Ode by Arthur O'Shaughnessy"
+
+    hidecredits = true
+    hidecopyright = true
+
+    rtl = false
+
+    math = false
+    custom_css = ["css/custom.css", "css/syntax.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/cleanunicorn/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fab fa-gitlab fa-2x"
+    weight = 2
+    url = "https://gitlab.com/cleanunicorn/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/cleanunicorn/"
+[[params.social]]
+    name = "Stackoverflow"
+    icon = "fab fa-stack-exchange fa-2x"
+    weight = 1
+    url = "https://ethereum.stackexchange.com/users/6253/cleanunicorn"    
+
+# Menu links
+# [[menu.main]]
+#     name = "Blog"
+#     weight = 1
+#     url  = "/blog/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
+
+

@@ -23,3 +23,5 @@ I like Ethereum and Ethereum related accessories.
 
 ## Books
 
+## Conferences
+

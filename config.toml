@@ -1,19 +1,19 @@
-baseurl = "http://www.cleanunicorn.xyz"
-title = "Daniel Luca"
+baseurl = "http://cleanunicorn.xyz"
+title = "Daniel Costin Luca"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 relativeURLs = true
 
 paginate = 20
-canonifyurls = false
+canonifyurls = true
 
 # pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsUseClasses = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "disqussname"
 
 [params]
     author = "Daniel Luca"

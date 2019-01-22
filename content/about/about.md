@@ -1,10 +1,12 @@
----
-title: "About me"
-date: 2019-01-21T17:02:52+02:00
-draft: true
----
++++
+title = "About me"
+date = 2019-01-21T17:02:52+02:00
+draft = true
+slug = "about"
++++
 
 ## About
+
 I am Daniel Luca.
 
 Based in Bucharest, Romania.

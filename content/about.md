@@ -5,13 +5,13 @@ draft = false
 slug = "about"
 +++
 
-I am Daniel Luca, based in Bucharest, Romania, a self taught developer with an emphasis on open source technologies, security and blockchain.
+I am Daniel Luca, based in Bucharest, Romania, a self taught developer with a passion for open source technologies, security and blockchain.
 
-I like snowboarding, swimming and meditating. Mostly interested in Ethereum at the moment.
+I like snowboarding, swimming and meditation. At this moment I am really interested in the Ethereum ecosystem.
 
 ### Talks
 
-Sometimes I give talks about things that I find interesting.
+Sometimes, I give talks about things that I find interesting.
 
 [Security Espresso Meetup 0x13](https://www.youtube.com/watch?v=sfyYTfS_7uU)
 

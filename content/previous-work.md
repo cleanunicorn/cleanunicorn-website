@@ -4,18 +4,18 @@ draft = false
 slug = "work"
 +++
 
-#### Security Researcher, ConsenSys Diligence 
+#### Security Researcher, ConsenSys Diligence
 
-I do security audits of Ethereum smart contracts.
+I audit Ethereum smart contracts.
 
 * **Company** ConsenSys
-* **Since** November 2019
+* **Since** November 2018
 
 ---
 
 #### Developer, Alethio
 
-Alethio is a ConsenSys spoke which creates analytics and for the Ethereum blockchain. I've built most of the data pipeline from that extracts the blockchain data, applied an [ontology](https://ethon.consensys.net/) and imported into multiple databases.
+Alethio is a ConsenSys spoke which creates analytics for the Ethereum blockchain. I've built most of the data pipeline from that extracts the blockchain data, applied an [ontology](https://ethon.consensys.net/) and imported into multiple databases.
 
 * **Company** ConsenSys
 * **Since** February 2017
@@ -25,17 +25,17 @@ Alethio is a ConsenSys spoke which creates analytics and for the Ethereum blockc
 
 #### Cofounder / CTO, Fitpass
 
-Fitpass is an aggregator of fitness studios and classes based in Bucharest, Romania. Cofounded and built the product, backend and frontend. 
+Fitpass is platform for fitness studios and classes based in Bucharest, Romania. Cofounded and built the product, backend and frontend.
 
 * **Company** Fitpass
-* **Since** May 2016 
+* **Since** May 2016
 * **Until** December 2017
 
 ---
 
 #### Cofounder / CTO, Lendia
 
-Lendia was a company aggregating offers from multiple banks. Cofounded and built the product.
+Lendia was a company aggregating lending offers from multiple banks. Cofounded and built the product.
 
 * **Company** Lendia
 * **Since** February 2015
@@ -45,7 +45,7 @@ Lendia was a company aggregating offers from multiple banks. Cofounded and built
 
 #### Owner, ElasticOrange
 
-ElasticOrange was a software development company building products for international clients.
+ElasticOrange was a software company that developed products for international clients.
 
 * **Company** ElasticOrange
 * **Since** October 2014
@@ -55,12 +55,11 @@ ElasticOrange was a software development company building products for internati
 
 #### Developer, Filebox
 
-Filebox was one of the biggest filesharing websites in Romania having 100k uniques per day. 
+Filebox was one of the biggest file sharing websites in Romania having 100k uniques per day.
 
 * **Company** Synco Telecom
 * **Since** May 2008
 * **Until** September 2010
-
 
 ---
 
@@ -68,4 +67,4 @@ Filebox was one of the biggest filesharing websites in Romania having 100k uniqu
 
 * **Since** 2018
 
-I am currently developing and holding a series of long format workshops which cover the basics of blockchain, Solidity, EVM, private chains setup, consensus vulnerabilities, smart contract design and other related topics.
+I am currently developing and holding a series of long format workshops which cover the basics of blockchain, Solidity, EVM, private chains setup, consensus algorithms, smart contract design and other related topics.

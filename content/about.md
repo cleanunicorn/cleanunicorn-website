@@ -5,9 +5,9 @@ draft = false
 slug = "about"
 +++
 
-I am Daniel Luca, based in Bucharest, Romania, a self taught developer with an emphasis on open source technologies, security, blockchain.
+I am Daniel Luca, based in Bucharest, Romania, a self taught developer with an emphasis on open source technologies, security and blockchain.
 
-I am a developer and a security researcher who likes snowboarding, swimming and meditating. Currently I am working in the Ethereum ecosystem.
+I like snowboarding, swimming and meditating. Mostly interested in Ethereum at the moment.
 
 ### Talks
 

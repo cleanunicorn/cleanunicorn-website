@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -x
+install_path='/var/www/html'
 
 hugo
-
-cp public/* /usr/share/nginx/html -r
+scp -rv public/* root@open.vpn:$install_path/ 

@@ -1,11 +1,11 @@
-baseurl = "http://cleanunicorn.xyz"
-title = "Daniel Costin Luca"
+baseurl = "https://cleanunicorn.xyz"
+title = "Daniel Luca"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 relativeURLs = true
 
-paginate = 20
+paginate = 5
 canonifyurls = true
 
 # pygmentsstyle = "bw"
@@ -33,7 +33,7 @@ disqusShortname = "disqussname"
     rtl = false
 
     math = false
-    custom_css = ["css/custom.css", "css/syntax.css"]
+    custom_css = ["css/syntax.css", "css/custom.css"]
 
 # Social links
 [[params.social]]
@@ -58,10 +58,6 @@ disqusShortname = "disqussname"
     url = "https://ethereum.stackexchange.com/users/6253/cleanunicorn"    
 
 # Menu links
-# [[menu.main]]
-#     name = "Blog"
-#     weight = 1
-#     url  = "/blog/"
 [[menu.main]]
     name = "About"
     weight = 1

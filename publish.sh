@@ -4,4 +4,4 @@ set -x
 
 hugo
 
-cp public/* /usr/share/nginx/html
+cp public/* /usr/share/nginx/html -r

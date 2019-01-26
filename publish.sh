@@ -4,5 +4,5 @@ install_path='/var/www/html'
 
 rm -rf public/
 
-~/go/bin/hugo
-scp -rv public/* root@open.vpn:$install_path/ 
+/usr/bin/hugo
+scp -r public/* root@open.vpn:$install_path/ 

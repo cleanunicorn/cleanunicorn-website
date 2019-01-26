@@ -4,14 +4,18 @@ theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 relativeURLs = true
-
-paginate = 5
 canonifyurls = true
 
-# pygmentsstyle = "bw"
+paginate = 5
+
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsUseClasses = true
+
+# Blackfriday renderer
+[blackfriday]
+    hrefTargetBlank = true
+	# plainIDAnchors = true
 
 disqusShortname = "disqussname"
 
@@ -33,23 +37,26 @@ disqusShortname = "disqussname"
     rtl = false
 
     math = false
-    custom_css = ["css/syntax.css", "css/custom.css"]
+    custom_css = [
+        "css/syntax.css", 
+        "css/custom.css"
+    ]
 
 # Social links
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
-    weight = 1
+    weight = 4
     url = "https://github.com/cleanunicorn/"
 [[params.social]]
     name = "Gitlab"
     icon = "fab fa-gitlab fa-2x"
-    weight = 2
+    weight = 3
     url = "https://gitlab.com/cleanunicorn/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
-    weight = 3
+    weight = 2
     url = "https://twitter.com/cleanunicorn/"
 [[params.social]]
     name = "Stackoverflow"
@@ -62,5 +69,8 @@ disqusShortname = "disqussname"
     name = "About"
     weight = 1
     url = "/about/"
-
+[[menu.main]]
+    name = "Blog"
+    weight = 2
+    url = "/blog/"
 

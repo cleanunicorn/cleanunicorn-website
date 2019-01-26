@@ -1,6 +1,8 @@
-#!/bin/bash
-
+#!/usr/bin/bash
+set -xe
 install_path='/var/www/html'
 
-hugo
+rm -rf public/
+
+~/go/bin/hugo
 scp -rv public/* root@open.vpn:$install_path/ 

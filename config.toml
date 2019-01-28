@@ -63,6 +63,11 @@ disqusShortname = "disqussname"
     icon = "fab fa-stack-exchange fa-2x"
     weight = 1
     url = "https://ethereum.stackexchange.com/users/6253/cleanunicorn"    
+[[params.social]]
+    name = "Medium"
+    icon = "fab fa-medium fa-2x"
+    weight = 1
+    url = "https://medium.com/@cleanunicorn"        
 
 # Menu links
 [[menu.main]]

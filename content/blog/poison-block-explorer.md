@@ -124,7 +124,7 @@ I wanted to see if any explorers are vulnerable to this and this is the result:
 - Transaction that calls pretends to deploy the good contract `0x9f4be1e7dac38999bf54af767983c9bf7e5f328d257883abbcd029e4989ccc69`
 - Transaction that deploys the malicious contract `0x3d1acd9ae5e9594b93d6529ac77c39bc4f570b360c4778350e5851460489ce65`
 
-I have contacted the explorers that have this problem and provided the details to help them fix the issue.
+I am in the process of contacting the explorers that have this problem to help them fix the issue.
 
 Explorers not vulnerable:
 

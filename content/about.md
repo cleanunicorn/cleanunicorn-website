@@ -17,6 +17,9 @@ Sometimes, I give talks about things that I find interesting.
 
 ### Projects
 
+#### [Flaterra](https://github.com/cleanunicorn/flaterra)
+Flaterra parses the provided Solidity source file and adds any other `imported` files. This is useful if you want to upload your source code to a block explorer for verification, use it with [Remix](https://remix.ethereum.org) or to run analysis on it, for example with [MythX](https://mythx.io/) or [Mythril](https://github.com/ConsenSys/mythril-classic/).
+
 #### [Midas](https://gitlab.com/cleanunicorn/eth-tipper) 
 A [Discord](https://discordapp.com) bot that acts as an Ethereum wallet and facilitates sending Ether between users.
 
@@ -41,6 +44,7 @@ Social token collectible IRL game part of the [DevCon4](https://devcon4.ethereum
 I like science fiction, philosophy and psychology.
 Some of the books I enjoyed:
 
+* **The Courage To Be Disliked** by Ichiro Kishimi, Fumitake Koga
 * **Thinking, Fast and Slow** by Daniel Kahneman
 * **Foundation series** by Isaac Asimov
 * **Predictably Irrational** by Dan Ariely

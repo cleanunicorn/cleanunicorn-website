@@ -41,6 +41,7 @@ Social token collectible IRL game part of the [DevCon4](https://devcon4.ethereum
 I like science fiction, philosophy and psychology.
 Some of the books I enjoyed:
 
+* **The Courage To Be Disliked** by Ichiro Kishimi, Fumitake Koga
 * **Thinking, Fast and Slow** by Daniel Kahneman
 * **Foundation series** by Isaac Asimov
 * **Predictably Irrational** by Dan Ariely

@@ -49,7 +49,7 @@ Some of the books I enjoyed:
 * **Foundation series** by Isaac Asimov
 * **Predictably Irrational** by Dan Ariely
 * **American Gods** by Neil Gaiman
-
+* **Choose Yourself** by James Altucher
 
 <!-- ## Conferences
 

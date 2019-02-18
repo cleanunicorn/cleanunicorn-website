@@ -67,11 +67,12 @@
     {{ end }}
 
     {{ .Hugo.Generator }}
-    {{ partial "mathjax_support.html" . }}
-    {{ partial "fathom_tracking.html" . }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
+    {{ partial "mathjax_support.html" . }}
+    {{ partial "fathom_tracking.html" . }}
+
     <main class="wrapper">
       {{ partial "header.html" . }}
 

@@ -17,6 +17,9 @@ Sometimes, I give talks about things that I find interesting.
 
 ### Projects
 
+#### [Mythos](https://github.com/cleanunicorn/mythos)
+Mythos is a CLI client for the [MythX](https://mythx.io) API.
+
 #### [Flaterra](https://github.com/cleanunicorn/flaterra)
 Flaterra parses the provided Solidity source file and adds any other `imported` files. This is useful if you want to upload your source code to a block explorer for verification, use it with [Remix](https://remix.ethereum.org) or to run analysis on it, for example with [MythX](https://mythx.io/) or [Mythril](https://github.com/ConsenSys/mythril-classic/).
 

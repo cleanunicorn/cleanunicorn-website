@@ -47,6 +47,7 @@ Social token collectible IRL game part of the [DevCon4](https://devcon4.ethereum
 I like science fiction, philosophy and psychology.
 Some of the books I enjoyed:
 
+* **Meditations** by Marcus Aurelius
 * **The Sense of Style** by Steven Pinker
 * **The Courage To Be Disliked** by Ichiro Kishimi, Fumitake Koga
 * **Thinking, Fast and Slow** by Daniel Kahneman

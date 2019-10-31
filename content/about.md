@@ -13,7 +13,9 @@ I like snowboarding, swimming and meditation. At this moment I am really interes
 
 Sometimes, I give talks about things that I find interesting.
 
-[Security Espresso Meetup 0x13](https://www.youtube.com/watch?v=sfyYTfS_7uU)
+- [Security Espresso Meetup 0x13 - Ethereum the Hacker's Paradise](https://www.youtube.com/watch?v=sfyYTfS_7uU)
+- [DefCon 27 - The Ether Wars: Exploits, counter-exploits and honeypots on Ethereum](/presentations/defcon27/DEFCON-27-Bernhard-Mueller-The-Ether-Wars.pdf)
+- [BlockchainHackers IV - Mastering Ethereum CTFs](/presentations//blockchainhackers-iv/Mastering-Ethereum-CTFs.pdf)
 
 ### Projects
 

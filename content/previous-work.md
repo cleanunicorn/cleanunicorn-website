@@ -6,9 +6,9 @@ slug = "work"
 
 #### Security Researcher, ConsenSys Diligence
 
-I audit Ethereum smart contracts.
+[ConsenSys Diligence](https://diligence.consensys.net/) does smart contract audits and Ethereum blockchain security. I am part of the team doing security audits and consulting. I also do security research and speak whenever I get the chance.
 
-* **Company** ConsenSys
+* **Company** ConsenSys Diligence
 * **Since** November 2018
 
 ---

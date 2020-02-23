@@ -17,6 +17,7 @@ Sometimes, I give talks about things that I find interesting.
 - [DefCon 27 - The Ether Wars: Exploits, counter-exploits and honeypots on Ethereum](https://youtu.be/Qd9ubry-c_M)
   - [Slides](/presentations/defcon27/DEFCON-27-Bernhard-Mueller-The-Ether-Wars.pdf)
 - [BlockchainHackers IV - Mastering Ethereum CTFs](/presentations//blockchainhackers-iv/Mastering-Ethereum-CTFs.pdf)
+- [The Bitcoin Podcast: #283 Daniel Luca - ConsenSys Diligence](https://thebitcoinpodcast.com/the-bitcoin-podcast-283/)
 
 ### Projects
 

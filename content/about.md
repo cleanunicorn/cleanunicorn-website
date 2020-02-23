@@ -51,6 +51,7 @@ Social token collectible IRL game part of the [DevCon4](https://devcon4.ethereum
 I like science fiction, philosophy and psychology.
 Some of the books I enjoyed:
 
+* **Algorithms to Live By**, by Brian Christian and Tom Griffiths
 * **The Three Body Problem** by Liu Cixin
 * **Meditations** by Marcus Aurelius
 * **The Sense of Style** by Steven Pinker

@@ -1,0 +1,3 @@
+[submodule "abi-decoder"]
+	path = abi-decoder
+	url = git@github.com:cleanunicorn/abi-decoder.git

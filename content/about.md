@@ -22,8 +22,8 @@ Sometimes, I give talks about things that I find interesting.
 
 ### Projects
 
-#### [ABI Decoder](https://github.com/cleanunicorn/abi-decoder)
-It decodes ABI encoded hex strings into the original types. Try it [here](/abi-decoder).
+#### [Santoku](https://github.com/cleanunicorn/santoku)
+It decodes ABI encoded hex strings into the original types. Try it [here](/santoku).
 
 #### [Mythos](https://github.com/cleanunicorn/mythos)
 Mythos is a CLI client for the [MythX](https://mythx.io) API.

@@ -23,7 +23,7 @@ Sometimes, I give talks about things that I find interesting.
 ### Projects
 
 #### [Santoku](https://github.com/cleanunicorn/santoku)
-It decodes ABI encoded hex strings into the original types. Try it [here](/santoku).
+It decodes ABI encoded hex strings into the original types. Try it [here](https://cleanunicorn.github.io/santoku/).
 
 #### [Mythos](https://github.com/cleanunicorn/mythos)
 Mythos is a CLI client for the [MythX](https://mythx.io) API.

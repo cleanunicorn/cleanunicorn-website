@@ -22,6 +22,9 @@ Sometimes, I give talks about things that I find interesting.
 
 ### Projects
 
+### [Hitomi](https://github.com/cleanunicorn/hitomi)
+Yet another Ethereum web3 console for any node.
+
 #### [Santoku](https://github.com/cleanunicorn/santoku)
 It decodes ABI encoded hex strings into the original types. Try it [here](https://cleanunicorn.github.io/santoku/).
 

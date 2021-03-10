@@ -24,7 +24,7 @@ disqusShortname = "disqussname"
     info = "Developer and security researcher"
     description = "Daniel Luca's personal website"
     keywords = "blog,developer,personal,security,ethereum,blockchain"
-    avatarurl = "images/me.jpg"
+    avatarurl = "images/me.png"
 
     favicon_32 = "images/favicon-32x32.png"
     favicon_16 = "images/favicon-16x16.png"

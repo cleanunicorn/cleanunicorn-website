@@ -1,90 +1,122 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Lang }}">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ partial "head.html" . }}
+</head>
 
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+{{ $csClass := "colorscheme-light" }}
+{{ if eq .Site.Params.colorScheme "dark" }}
+{{ $csClass = "colorscheme-dark" }}
+{{ else if eq .Site.Params.colorScheme "auto" }}
+{{ $csClass = "colorscheme-auto" }}
+{{ end }}
 
-    {{ template "_internal/twitter_cards.html" . }}
+<body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  {{ partial "float" . }}
+  <main class="wrapper">
+    {{ partial "header.html" . }}
 
-    <base href="{{ .Permalink }}">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <div class="content">
+      {{ block "content" . }}{{ end }}
+    </div>
 
-    <link rel="canonical" href="{{ .Permalink }}">
+    {{ partial "footer.html" . }}
+  </main>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+  {{ if .HasShortcode "mermaid" }}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  {{ end }}
 
-    {{ if .Site.IsServer }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-    {{ else }}
-      {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-    {{ end }}
+  {{ if .Site.IsServer }}
+  {{ $script := resources.Get "js/coder.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
 
-    {{ if .Site.Params.rtl }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
+  {{ range .Site.Params.customJS }}
+  {{ if $.Site.IsServer }}
+  {{ $script := resources.Get . }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.Get . | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+  {{ end }}
 
-    {{ if .Site.Params.inverted }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-inverted.css" ) }}
-        {{ $styles := resources.Get "scss/coder-inverted.scss" | resources.ExecuteAsTemplate "style.coder-inverted.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
+  {{ range .Site.Params.customRemoteJS }}
+  {{ if $.Site.IsServer }}
+  {{ $script := resources.GetRemote . }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ else }}
+  {{ $script := resources.GetRemote . | minify | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+  {{ end }}
 
-    {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | relURL }}">
-    {{ end }}
 
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+  {{ template "_internal/google_analytics.html" . }}
 
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+  {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
+  {{- partial "analytics/fathom" . -}}
+  {{ end }}
 
-    {{ .Hugo.Generator }}
-  </head>
+  {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
+  {{- partial "analytics/plausible" . -}}
+  {{ end }}
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
-    {{ partial "mathjax_support.html" . }}
-    {{ partial "fathom_tracking.html" . }}
+  {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
+  {{- partial "analytics/goatcounter" . -}}
+  {{ end }}
 
-    <main class="wrapper">
-      {{ partial "header.html" . }}
+  {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
+  {{- partial "analytics/cloudflare" . -}}
+  {{ end }}
 
-      <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>
+  {{ if and .Site.Params.baidu .Site.Params.baidu.token }}
+  {{- partial "analytics/baidu" . -}}
+  {{ end }}
 
-      {{ partial "footer.html" . }}
-    </main>
+  {{ if and .Site.Params.wideAngleAnalytics .Site.Params.wideAngleAnalytics.siteID }}
+  {{- partial "analytics/wideangle" . -}}
+  {{ end }}
 
-    {{ template "_internal/google_analytics.html" . }}
+  {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
+  {{- partial "analytics/matomo" . -}}
+  {{ end }}
 
-  </body>
+  {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
+  {{- partial "analytics/googletagmanager" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.applicationInsights .Site.Params.applicationInsights.connectionString }}
+  {{- partial "analytics/applicationinsights" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.microAnalytics .Site.Params.microAnalytics.id }}
+  {{- partial "analytics/microanalyticsio" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.yandexMetrika .Site.Params.yandexMetrika.id }}
+  {{- partial "analytics/yandex-metrika" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.umami .Site.Params.umami.siteID }}
+  {{- partial "analytics/umami" . -}}
+  {{ end }}
+
+  {{ if and .Site.Params.pirsch .Site.Params.pirsch.code }}
+  {{- partial "analytics/pirsch" . -}}
+  {{ end }}
+
+  {{- partial "body/extensions" . -}}
+</body>
 
 </html>
